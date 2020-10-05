@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/icon" href="images/space.ico">
+        <script src="behavior.js"></script>
+        <script async defer crossorigin="anonymous"
+                src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v6.0"></script>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <title>Space Missions</title>
+</head>
+
+<body>
+        <div id="father">
+                <div id="fb-root"></div>
+                <section class="principal-section">
+                        <header class="header" id="header">
+                                <div class="logo"><a href="https://www.nasa.gov/missions" target="_blank">SPACE MISSIONS</a></div>
+                                <div class="social-media">
+                                        <div class="fb-share-button" data-href="http://34.207.82.136/"
+                                                data-layout="button_count" data-size="small"><a target="_blank"
+                                                        href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F34.207.82.136%2F&amp;src=sdkpreparse"
+                                                        class="fb-xfbml-parse-ignore">Compartir</a></div>
+                                        <div class="tw-follow-button">
+                                                <a href="https://twitter.com/stevecode21?ref_src=twsrc%5Etfw"
+                                                        class="twitter-follow-button" data-show-count="false">Follow
+                                                        @stevecode21</a>
+                                        </div>
+                                </div>
+                                <nav class="nav">
+                                        <ul class="navigation">
+                                                <li><a href="index.html">Home</a></li>
+                                                <li> <a href="#missions">Missions</a></li>
+                                                <li><a href="tweets.html">Social</a></li>
+                                        </ul>
+                                </nav>
+                        </header>
+                        <img class="first-image-slider" src="images/jupiter.jpg" alt="">
+                        <!-- <video class="first-image-slider" src="videos/space1.mp4" autoplay loop></video> -->
+                </section>
+                <div class="container-information" id="missions">
+                        <div class="title-space-missions">
+                                <h1>THE MOST IMPORTANT MISSIONS<h1>
+                        </div>
+                        <article class="article">
+                                <div class="container-boxes">
+                                        <div class="boxes-missions">
+                                                <img class="image-missions" src="images/voyager1.jpg" alt="">
+                                                <div class="spaceship-tittle">
+                                                        <h2>Voyager I</h2>
+                                                </div>
+                                                <div class="button-box">
+                                                        <button class="buttons" role="link"
+                                                                onclick="window.location='voyagerone.html'">Show
+                                                                more</button>
+                                                </div>
+
+                                        </div>
+                                        <div class="boxes-missions">
+                                                <img class="image-missions" src="images/cassini.jpg" alt="">
+                                                <div class="spaceship-tittle">
+                                                        <h2>Cassini-Huygens</h2>
+                                                </div>
+                                                <div class="button-box">
+                                                        <button class="buttons" role="link"
+                                                                onclick="window.location='cassini.html'">Show
+                                                                more</button>
+                                                </div>
+                                        </div>
+                                        <div class="boxes-missions">
+                                                <img class="image-missions" src="images/apollo11.jpg" alt="">
+                                                <div class="spaceship-tittle">
+                                                        <h2>Apollo 11</h2>
+                                                </div>
+                                                <div class="button-box">
+                                                        <button class="buttons" role="link"
+                                                                onclick="window.location='apollo.html'">Show
+                                                                more</button>
+                                                </div>
+                                        </div>
+                                        <div class="boxes-missions">
+                                                <img class="image-missions" src="images/vostok1.jpg" alt="">
+                                                <div class="spaceship-tittle">
+                                                        <h2>Vostok I</h2>
+                                                </div>
+                                                <div class="button-box">
+                                                        <button class="buttons" role="link"
+                                                                onclick="window.location='vostok.html'">Show
+                                                                more</button>
+                                                </div>
+                                        </div>
+                                </div>
+                        </article>
+                </div>
+                <div class="tittle-comments">
+                        <h2>WHAT DO YOU THINK ABOUT SPACE MISSIONS?</h2>
+                </div>
+                <div class="container-comment">
+                        <aside class="disqus">
+                                <div id="disqus_thread"></div>
+                                <script>
+
+                                        /**
+                                        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                                        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                                        /*
+                                        var disqus_config = function () {
+                                        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                                        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                                        };
+                                        */
+                                        (function () { // DON'T EDIT BELOW THIS LINE
+                                                var d = document, s = d.createElement('script');
+                                                s.src = 'https://spacemissions.disqus.com/embed.js';
+                                                s.setAttribute('data-timestamp', +new Date());
+                                                (d.head || d.body).appendChild(s);
+                                        })();
+                                </script>
+                                <noscript>Please enable JavaScript to view the <a
+                                                href="https://disqus.com/?ref_noscript">comments powered by
+                                                Disqus.</a></noscript>
+
+                        </aside>
+                </div>
+                <footer class="footer">
+                        <p class="text-footer">Made by <a href="https://twitter.com/stevecode21" target="_blank">Johan
+                                        Suarez</a> for <a href="https://www.holbertonschool.com"
+                                        target="_blank">Holberton School</a>
+                        </p>
+                </footer>
+        </div>
+
+</body>
+
+</html>
